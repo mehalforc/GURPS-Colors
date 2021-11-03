@@ -1,0 +1,35 @@
+{
+  "name": "GURPS-colors",
+  "title": "GURPS Colors",
+  "description": "Adds the ability to change colors of the rolling buttons on the character sheet",
+  "author": "Stevil",
+  "authors": [],
+  "url": "",
+  "flags": {},
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.7.0",
+  "compatibleCoreVersion": "0.8.9",
+  "scripts": [],
+  "esmodules": [
+    "./main.js"
+  ],
+  "styles": [
+    "./styles/GURPS-colors-style.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "./lang/en.json"
+    }
+  ],
+  "packs": [],
+  "system": [],
+  "dependencies": [],
+  "socket": false,
+  "manifest": "",
+  "download": "",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
+}

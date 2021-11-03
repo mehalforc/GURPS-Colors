@@ -1,0 +1,19 @@
+.rollable {
+    background-color: #ffffbe !important;
+    color: #000000 !important;
+}
+
+.rollable:hover {
+    background-color: #ffff80 !important;
+    color: #000000 !important;
+}
+
+.dodge.rollable {
+    background-color: #ffffbe !important;
+    color: #000000 !important;
+}
+
+.dodge.rollable:hover {
+    background-color: #ffff80 !important;
+    color: #000000 !important;
+}
