@@ -8,12 +8,84 @@
     color: #000000 !important;
 }
 
+.penalty.gmod {
+    background-color: #ffe6be !important;
+    color: #000000 !important;
+}
+
+.penalty.gmod:hover {
+    background-color: #ff8064 !important;
+    color: #000000 !important;
+}
+
 .dodge.rollable {
     background-color: #ffffbe !important;
     color: #000000 !important;
 }
 
 .dodge.rollable:hover {
+    background-color: #ffff80 !important;
+    color: #000000 !important;
+}
+
+.damage.rollable {
+    background-color: #ffffbe !important;
+    color: #000000 !important;
+}
+
+.damage.rollable:hover {
+    background-color: #ffff80 !important;
+    color: #000000 !important;
+}
+
+.block.rollable {
+    background-color: #ffffbe !important;
+    color: #000000 !important;
+}
+
+.block.rollable:hover {
+    background-color: #ffff80 !important;
+    color: #000000 !important;
+}
+
+.parry.rollable {
+    background-color: #ffffbe !important;
+    color: #000000 !important;
+}
+
+.parry.rollable:hover {
+    background-color: #ffff80 !important;
+    color: #000000 !important;
+}
+
+.usage.rollable,
+.level.rollable {
+    background-color: #ffffbe !important;
+    color: #000000 !important;
+}
+
+.usage.rollable:hover,
+.level.rollable:hover {
+    background-color: #ffff80 !important;
+    color: #000000 !important;
+}
+
+.sl.rollable {
+    background-color: #ffffbe !important;
+    color: #000000 !important;
+}
+
+.sl.rollable:hover {
+    background-color: #ffff80 !important;
+    color: #000000 !important;
+}
+
+.gurpslink {
+    background-color: #ffffbe !important;
+    color: #000000 !important;
+}
+
+.gurpslink:hover {
     background-color: #ffff80 !important;
     color: #000000 !important;
 }
