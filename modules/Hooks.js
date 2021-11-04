@@ -31,6 +31,8 @@ export function addColorWheel() {
   $(".GC-attributes-rollable #colorPicker").tinycolorpicker();
 
   $(".GC-attributes-rollable .colorInner").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-attributes-rollable .color").css("z-index", newColorZindex);
     $(".GC-attributes-rollable .track").css("z-index", newTrackZindex);
 
@@ -40,9 +42,6 @@ export function addColorWheel() {
   });
 
   $(".GC-attributes-rollable canvas").on("click", function () {
-    $(".GC-attributes-rollable .color").css("z-index", oldColorZindex);
-    $(".GC-attributes-rollable .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-attributes-rollable"]').val(
       $(".GC-attributes-rollable .colorInput").val()
     );
@@ -65,6 +64,8 @@ export function addColorWheel() {
   $(".GC-attributes-rollable-hover #colorPicker").tinycolorpicker();
 
   $(".GC-attributes-rollable-hover .color").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-attributes-rollable-hover .color").css("z-index", newColorZindex);
     $(".GC-attributes-rollable-hover .track").css("z-index", newTrackZindex);
 
@@ -74,9 +75,6 @@ export function addColorWheel() {
   });
 
   $(".GC-attributes-rollable-hover canvas").on("click", function () {
-    $(".GC-attributes-rollable-hover .color").css("z-index", oldColorZindex);
-    $(".GC-attributes-rollable-hover .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-attributes-rollable-hover"]').val(
       $(".GC-attributes-rollable-hover .colorInput").val()
     );
@@ -101,6 +99,8 @@ export function addColorWheel() {
   $(".GC-dodge-rollable #colorPicker").tinycolorpicker();
 
   $(".GC-dodge-rollable .colorInner").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-dodge-rollable .color").css("z-index", newColorZindex);
     $(".GC-dodge-rollable .track").css("z-index", newTrackZindex);
 
@@ -110,9 +110,6 @@ export function addColorWheel() {
   });
 
   $(".GC-dodge-rollable canvas").on("click", function () {
-    $(".GC-dodge-rollable .color").css("z-index", oldColorZindex);
-    $(".GC-dodge-rollable .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-dodge-rollable"]').val(
       $(".GC-dodge-rollable .colorInput").val()
     );
@@ -135,6 +132,8 @@ export function addColorWheel() {
   $(".GC-dodge-rollable-hover #colorPicker").tinycolorpicker();
 
   $(".GC-dodge-rollable-hover .color").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-dodge-rollable-hover .color").css("z-index", newColorZindex);
     $(".GC-dodge-rollable-hover .track").css("z-index", newTrackZindex);
 
@@ -144,9 +143,6 @@ export function addColorWheel() {
   });
 
   $(".GC-dodge-rollable-hover canvas").on("click", function () {
-    $(".GC-dodge-rollable-hover .color").css("z-index", oldColorZindex);
-    $(".GC-dodge-rollable-hover .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-dodge-rollable-hover"]').val(
       $(".GC-dodge-rollable-hover .colorInput").val()
     );
@@ -171,6 +167,8 @@ export function addColorWheel() {
   $(".GC-damage-rollable #colorPicker").tinycolorpicker();
 
   $(".GC-damage-rollable .colorInner").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-damage-rollable .color").css("z-index", newColorZindex);
     $(".GC-damage-rollable .track").css("z-index", newTrackZindex);
 
@@ -180,9 +178,6 @@ export function addColorWheel() {
   });
 
   $(".GC-damage-rollable canvas").on("click", function () {
-    $(".GC-damage-rollable .color").css("z-index", oldColorZindex);
-    $(".GC-damage-rollable .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-damage-rollable"]').val(
       $(".GC-damage-rollable .colorInput").val()
     );
@@ -205,6 +200,8 @@ export function addColorWheel() {
   $(".GC-damage-rollable-hover #colorPicker").tinycolorpicker();
 
   $(".GC-damage-rollable-hover .color").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-damage-rollable-hover .color").css("z-index", newColorZindex);
     $(".GC-damage-rollable-hover .track").css("z-index", newTrackZindex);
 
@@ -214,9 +211,6 @@ export function addColorWheel() {
   });
 
   $(".GC-damage-rollable-hover canvas").on("click", function () {
-    $(".GC-damage-rollable-hover .color").css("z-index", oldColorZindex);
-    $(".GC-damage-rollable-hover .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-damage-rollable-hover"]').val(
       $(".GC-damage-rollable-hover .colorInput").val()
     );
@@ -241,6 +235,8 @@ export function addColorWheel() {
   $(".GC-block-rollable #colorPicker").tinycolorpicker();
 
   $(".GC-block-rollable .colorInner").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-block-rollable .color").css("z-index", newColorZindex);
     $(".GC-block-rollable .track").css("z-index", newTrackZindex);
 
@@ -250,9 +246,6 @@ export function addColorWheel() {
   });
 
   $(".GC-block-rollable canvas").on("click", function () {
-    $(".GC-block-rollable .color").css("z-index", oldColorZindex);
-    $(".GC-block-rollable .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-block-rollable"]').val(
       $(".GC-block-rollable .colorInput").val()
     );
@@ -275,6 +268,8 @@ export function addColorWheel() {
   $(".GC-block-rollable-hover #colorPicker").tinycolorpicker();
 
   $(".GC-block-rollable-hover .color").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-block-rollable-hover .color").css("z-index", newColorZindex);
     $(".GC-block-rollable-hover .track").css("z-index", newTrackZindex);
 
@@ -284,9 +279,6 @@ export function addColorWheel() {
   });
 
   $(".GC-block-rollable-hover canvas").on("click", function () {
-    $(".GC-block-rollable-hover .color").css("z-index", oldColorZindex);
-    $(".GC-block-rollable-hover .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-block-rollable-hover"]').val(
       $(".GC-block-rollable-hover .colorInput").val()
     );
@@ -311,18 +303,17 @@ export function addColorWheel() {
   $(".GC-parry-rollable #colorPicker").tinycolorpicker();
 
   $(".GC-parry-rollable .colorInner").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-parry-rollable .color").css("z-index", newColorZindex);
     $(".GC-parry-rollable .track").css("z-index", newTrackZindex);
-
+    
     $('input[name="GURPS-colors.GC-parry-rollable"]').val(
       $(".GC-parry-rollable .colorInput").val()
     );
   });
 
   $(".GC-parry-rollable canvas").on("click", function () {
-    $(".GC-parry-rollable .color").css("z-index", oldColorZindex);
-    $(".GC-parry-rollable .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-parry-rollable"]').val(
       $(".GC-parry-rollable .colorInput").val()
     );
@@ -345,6 +336,8 @@ export function addColorWheel() {
   $(".GC-parry-rollable-hover #colorPicker").tinycolorpicker();
 
   $(".GC-parry-rollable-hover .color").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-parry-rollable-hover .color").css("z-index", newColorZindex);
     $(".GC-parry-rollable-hover .track").css("z-index", newTrackZindex);
 
@@ -354,9 +347,6 @@ export function addColorWheel() {
   });
 
   $(".GC-parry-rollable-hover canvas").on("click", function () {
-    $(".GC-parry-rollable-hover .color").css("z-index", oldColorZindex);
-    $(".GC-parry-rollable-hover .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-parry-rollable-hover"]').val(
       $(".GC-parry-rollable-hover .colorInput").val()
     );
@@ -381,6 +371,8 @@ export function addColorWheel() {
   $(".GC-weapons-rollable #colorPicker").tinycolorpicker();
 
   $(".GC-weapons-rollable .colorInner").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-weapons-rollable .color").css("z-index", newColorZindex);
     $(".GC-weapons-rollable .track").css("z-index", newTrackZindex);
 
@@ -390,9 +382,6 @@ export function addColorWheel() {
   });
 
   $(".GC-weapons-rollable canvas").on("click", function () {
-    $(".GC-weapons-rollable .color").css("z-index", oldColorZindex);
-    $(".GC-weapons-rollable .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-weapons-rollable"]').val(
       $(".GC-weapons-rollable .colorInput").val()
     );
@@ -415,18 +404,16 @@ export function addColorWheel() {
   $(".GC-weapons-rollable-hover #colorPicker").tinycolorpicker();
 
   $(".GC-weapons-rollable-hover .color").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-weapons-rollable-hover .color").css("z-index", newColorZindex);
     $(".GC-weapons-rollable-hover .track").css("z-index", newTrackZindex);
-
     $('input[name="GURPS-colors.GC-weapons-rollable-hover"]').val(
       $(".GC-weapons-rollable .colorInput").val()
     );
   });
 
   $(".GC-weapons-rollable-hover canvas").on("click", function () {
-    $(".GC-weapons-rollable-hover .color").css("z-index", oldColorZindex);
-    $(".GC-weapons-rollable-hover .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-weapons-rollable-hover"]').val(
       $(".GC-weapons-rollable-hover .colorInput").val()
     );
@@ -451,6 +438,8 @@ export function addColorWheel() {
   $(".GC-skills-rollable #colorPicker").tinycolorpicker();
 
   $(".GC-skills-rollable .colorInner").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-skills-rollable .color").css("z-index", newColorZindex);
     $(".GC-skills-rollable .track").css("z-index", newTrackZindex);
 
@@ -460,9 +449,6 @@ export function addColorWheel() {
   });
 
   $(".GC-skills-rollable canvas").on("click", function () {
-    $(".GC-skills-rollable .color").css("z-index", oldColorZindex);
-    $(".GC-skills-rollable .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-skills-rollable"]').val(
       $(".GC-skills-rollable .colorInput").val()
     );
@@ -485,6 +471,8 @@ export function addColorWheel() {
   $(".GC-skills-rollable-hover #colorPicker").tinycolorpicker();
 
   $(".GC-skills-rollable-hover .color").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-skills-rollable-hover .color").css("z-index", newColorZindex);
     $(".GC-skills-rollable-hover .track").css("z-index", newTrackZindex);
 
@@ -494,9 +482,6 @@ export function addColorWheel() {
   });
 
   $(".GC-skills-rollable-hover canvas").on("click", function () {
-    $(".GC-skills-rollable-hover .color").css("z-index", oldColorZindex);
-    $(".GC-skills-rollable-hover .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-skills-rollable-hover"]').val(
       $(".GC-skills-rollable-hover .colorInput").val()
     );
@@ -521,6 +506,8 @@ export function addColorWheel() {
   $(".GC-spells-rollable #colorPicker").tinycolorpicker();
 
   $(".GC-spells-rollable .colorInner").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-spells-rollable .color").css("z-index", newColorZindex);
     $(".GC-spells-rollable .track").css("z-index", newTrackZindex);
 
@@ -530,9 +517,6 @@ export function addColorWheel() {
   });
 
   $(".GC-spells-rollable canvas").on("click", function () {
-    $(".GC-spells-rollable .color").css("z-index", oldColorZindex);
-    $(".GC-spells-rollable .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-spells-rollable"]').val(
       $(".GC-spells-rollable .colorInput").val()
     );
@@ -555,6 +539,8 @@ export function addColorWheel() {
   $(".GC-spells-rollable-hover #colorPicker").tinycolorpicker();
 
   $(".GC-spells-rollable-hover .color").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-spells-rollable-hover .color").css("z-index", newColorZindex);
     $(".GC-spells-rollable-hover .track").css("z-index", newTrackZindex);
 
@@ -564,9 +550,6 @@ export function addColorWheel() {
   });
 
   $(".GC-spells-rollable-hover canvas").on("click", function () {
-    $(".GC-spells-rollable-hover .color").css("z-index", oldColorZindex);
-    $(".GC-spells-rollable-hover .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-spells-rollable-hover"]').val(
       $(".GC-spells-rollable-hover .colorInput").val()
     );
@@ -591,6 +574,8 @@ export function addColorWheel() {
   $(".GC-gurpslink-rollable #colorPicker").tinycolorpicker();
 
   $(".GC-gurpslink-rollable .colorInner").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-gurpslink-rollable .color").css("z-index", newColorZindex);
     $(".GC-gurpslink-rollable .track").css("z-index", newTrackZindex);
 
@@ -600,9 +585,6 @@ export function addColorWheel() {
   });
 
   $(".GC-gurpslink-rollable canvas").on("click", function () {
-    $(".GC-gurpslink-rollable .color").css("z-index", oldColorZindex);
-    $(".GC-gurpslink-rollable .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-gurpslink-rollable"]').val(
       $(".GC-gurpslink-rollable .colorInput").val()
     );
@@ -625,6 +607,8 @@ export function addColorWheel() {
   $(".GC-gurpslink-rollable-hover #colorPicker").tinycolorpicker();
 
   $(".GC-gurpslink-rollable-hover .color").on("click", function () {
+    $("#colorPicker .color").css("z-index", oldColorZindex);
+    $("#colorPicker .track").css("z-index", oldTrackZindex);
     $(".GC-gurpslink-rollable-hover .color").css("z-index", newColorZindex);
     $(".GC-gurpslink-rollable-hover .track").css("z-index", newTrackZindex);
 
@@ -634,9 +618,6 @@ export function addColorWheel() {
   });
 
   $(".GC-gurpslink-rollable-hover canvas").on("click", function () {
-    $(".GC-gurpslink-rollable-hover .color").css("z-index", oldColorZindex);
-    $(".GC-gurpslink-rollable-hover .track").css("z-index", oldTrackZindex);
-
     $('input[name="GURPS-colors.GC-gurpslink-rollable-hover"]').val(
       $(".GC-gurpslink-rollable-hover .colorInput").val()
     );
