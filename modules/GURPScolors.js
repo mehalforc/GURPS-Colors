@@ -1,5 +1,7 @@
 import { warn, error, debug, log } from "../main.js";
 import { MODULE_NAME } from "./Settings.js";
+import { gcAtributesColors, gcDodgeColors, gcDamageColors, gcBlockColors, gcParryColors, gcWeaponsColors, gcSkillsColors, gcSpellsColors, gcGurpsLinksColors } from "./Settings.js";
+
 export class GURPScolors {
   static init() {
     warn("Init GURPS Colors...");
@@ -7,122 +9,42 @@ export class GURPScolors {
   }
   static updateSettings() {
     warn("Update GURPS Color Setting...");
-    GURPScolors.colorAttributesRollable = game.settings.get(
-      MODULE_NAME,
-      "GC-attributes-rollable"
-    );
-    GURPScolors.colorAttributesRollableText = game.settings.get(
-      MODULE_NAME,
-      "GC-attributes-rollable-text"
-    );
-    GURPScolors.colorAttributesRollableHover = game.settings.get(
-      MODULE_NAME,
-      "GC-attributes-rollable-hover"
-    );
-
-    GURPScolors.colorDodgeRollable = game.settings.get(
-      MODULE_NAME,
-      "GC-dodge-rollable"
-    );
-    GURPScolors.colorDodgeRollableText = game.settings.get(
-      MODULE_NAME,
-      "GC-dodge-rollable-text"
-    );
-    GURPScolors.colorDodgeRollableHover = game.settings.get(
-      MODULE_NAME,
-      "GC-dodge-rollable-hover"
-    );
-
-    GURPScolors.colorDamageRollable = game.settings.get(
-      MODULE_NAME,
-      "GC-damage-rollable"
-    );
-    GURPScolors.colorDamageRollableText = game.settings.get(
-      MODULE_NAME,
-      "GC-damage-rollable-text"
-    );
-    GURPScolors.colorDamageRollableHover = game.settings.get(
-      MODULE_NAME,
-      "GC-damage-rollable-hover"
-    );
-
-    GURPScolors.colorBlockRollable = game.settings.get(
-      MODULE_NAME,
-      "GC-block-rollable"
-    );
-    GURPScolors.colorBlockRollableText = game.settings.get(
-      MODULE_NAME,
-      "GC-block-rollable-text"
-    );
-    GURPScolors.colorBlockRollableHover = game.settings.get(
-      MODULE_NAME,
-      "GC-block-rollable-hover"
-    );
-
-    GURPScolors.colorParryRollable = game.settings.get(
-      MODULE_NAME,
-      "GC-parry-rollable"
-    );
-    GURPScolors.colorParryRollableText = game.settings.get(
-      MODULE_NAME,
-      "GC-parry-rollable-text"
-    );
-    GURPScolors.colorParryRollableHover = game.settings.get(
-      MODULE_NAME,
-      "GC-parry-rollable-hover"
-    );
-
-    GURPScolors.colorWeaponsRollable = game.settings.get(
-      MODULE_NAME,
-      "GC-weapons-rollable"
-    );
-    GURPScolors.colorWeaponsRollableText = game.settings.get(
-      MODULE_NAME,
-      "GC-weapons-rollable-text"
-    );
-    GURPScolors.colorWeaponsRollableHover = game.settings.get(
-      MODULE_NAME,
-      "GC-weapons-rollable-hover"
-    );
-
-    GURPScolors.colorSkillsRollable = game.settings.get(
-      MODULE_NAME,
-      "GC-skills-rollable"
-    );
-    GURPScolors.colorSkillsRollableText = game.settings.get(
-      MODULE_NAME,
-      "GC-skills-rollable-text"
-    );
-    GURPScolors.colorSkillsRollableHover = game.settings.get(
-      MODULE_NAME,
-      "GC-skills-rollable-hover"
-    );
-
-    GURPScolors.colorSpellsRollable = game.settings.get(
-      MODULE_NAME,
-      "GC-spells-rollable"
-    );
-    GURPScolors.colorSpellsRollableText = game.settings.get(
-      MODULE_NAME,
-      "GC-spells-rollable-text"
-    );
-    GURPScolors.colorSpellsRollableHover = game.settings.get(
-      MODULE_NAME,
-      "GC-spells-rollable-hover"
-    );
-
-    GURPScolors.colorGurpsLinksRollable = game.settings.get(
-      MODULE_NAME,
-      "GC-gurpslink-rollable"
-    );
-    GURPScolors.colorGurpsLinksRollableText = game.settings.get(
-      MODULE_NAME,
-      "GC-gurpslink-rollable-text"
-    );
-    GURPScolors.colorGurpsLinksRollableHover = game.settings.get(
-      MODULE_NAME,
-      "GC-gurpslink-rollable-hover"
-    );
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    GURPScolors.colorAttributesRollable = game.settings.get(MODULE_NAME, gcAtributesColors[0]);
+    GURPScolors.colorAttributesRollableHover = game.settings.get(MODULE_NAME, gcAtributesColors[1]);
+    GURPScolors.colorAttributesRollableText = game.settings.get(MODULE_NAME, gcAtributesColors[2]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    GURPScolors.colorDodgeRollable = game.settings.get(MODULE_NAME, gcDodgeColors[0]);
+    GURPScolors.colorDodgeRollableHover = game.settings.get(MODULE_NAME, gcDodgeColors[1]);
+    GURPScolors.colorDodgeRollableText = game.settings.get(MODULE_NAME, gcDodgeColors[2]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    GURPScolors.colorDamageRollable = game.settings.get(MODULE_NAME, gcDamageColors[0]);
+    GURPScolors.colorDamageRollableHover = game.settings.get(MODULE_NAME, gcDamageColors[1]);
+    GURPScolors.colorDamageRollableText = game.settings.get(MODULE_NAME, gcDamageColors[2]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    GURPScolors.colorBlockRollable = game.settings.get(MODULE_NAME, gcBlockColors[0]);
+    GURPScolors.colorBlockRollableHover = game.settings.get(MODULE_NAME, gcBlockColors[1]);
+    GURPScolors.colorBlockRollableText = game.settings.get(MODULE_NAME, gcBlockColors[2]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    GURPScolors.colorParryRollable = game.settings.get(MODULE_NAME, gcParryColors[0]);
+    GURPScolors.colorParryRollableHover = game.settings.get(MODULE_NAME, gcParryColors[1]);
+    GURPScolors.colorParryRollableText = game.settings.get(MODULE_NAME, gcParryColors[2]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    GURPScolors.colorWeaponsRollable = game.settings.get(MODULE_NAME, gcWeaponsColors[0]);
+    GURPScolors.colorWeaponsRollableHover = game.settings.get(MODULE_NAME, gcWeaponsColors[1]);
+    GURPScolors.colorWeaponsRollableText = game.settings.get(MODULE_NAME, gcWeaponsColors[2]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    GURPScolors.colorSkillsRollable = game.settings.get(MODULE_NAME, gcSkillsColors[0]);
+    GURPScolors.colorSkillsRollableHover = game.settings.get(MODULE_NAME, gcSkillsColors[1]);
+    GURPScolors.colorSkillsRollableText = game.settings.get(MODULE_NAME, gcSkillsColors[2]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+    GURPScolors.colorSpellsRollable = game.settings.get(MODULE_NAME, gcSpellsColors[0]);
+    GURPScolors.colorSpellsRollableHover = game.settings.get(MODULE_NAME, gcSpellsColors[1]);
+    GURPScolors.colorSpellsRollableText = game.settings.get(MODULE_NAME, gcSpellsColors[2]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    GURPScolors.colorGurpsLinksRollable = game.settings.get(MODULE_NAME, gcGurpsLinksColors[0]);
+    GURPScolors.colorGurpsLinksRollableHover = game.settings.get(MODULE_NAME, gcGurpsLinksColors[1]);
+    GURPScolors.colorGurpsLinksRollableText = game.settings.get(MODULE_NAME, gcGurpsLinksColors[2]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   }
-  static prepareEvent() {}
 }

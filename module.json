@@ -6,8 +6,8 @@
   "authors": [],
   "url": "",
   "flags": {},
-  "version": "1.1.1",
-  "minimumCoreVersion": "0.7.0",
+  "version": "1.2.0",
+  "minimumCoreVersion": "0.8.9",
   "compatibleCoreVersion": "0.8.9",
   "scripts": [
     "scripts/jquery.tinycolorpicker.js"

@@ -11,314 +11,244 @@ $.getJSON(requestURL, function (json) {
   MODULE_VERSION = json.version;
 });
 
-export const gcAtributesColors = [
-  "GC-attributes-rollable",
-  "GC-attributes-rollable-hover",
-  "GC-attributes-rollable-text",
-];
-export const gcDodgeColors = [
-  "GC-dodge-rollable",
-  "GC-dodge-rollable-hover",
-  "GC-dodge-rollable-text",
-];
-export const gcDamageColors = [
-  "GC-damage-rollable",
-  "GC-damage-rollable-hover",
-  "GC-damage-rollable-text",
-];
-export const gcBlockColors = [
-  "GC-block-rollable",
-  "GC-block-rollable-hover",
-  "GC-block-rollable-text",
-];
-export const gcParryColors = [
-  "GC-parry-rollable",
-  "GC-parry-rollable-hover",
-  "GC-parry-rollable-text",
-];
-export const gcWeaponsColors = [
-  "GC-weapons-rollable",
-  "GC-weapons-rollable-hover",
-  "GC-weapons-rollable-text",
-];
-export const gcSkillsColors = [
-  "GC-skills-rollable",
-  "GC-skills-rollable-hover",
-  "GC-skills-rollable-text",
-];
-export const gcSpellsColors = [
-  "GC-spells-rollable",
-  "GC-spells-rollable-hover",
-  "GC-spells-rollable-text",
-];
-export const gcGurpsLinksColors = [
-  "GC-gurpslink-rollable",
-  "GC-gurpslink-rollable-hover",
-  "GC-gurpslink-rollable-text",
-];
+export const gcColorAreas = ["Attributes", "Dodge", "Damage", "Block", "Parry", "Weapons Roll", "Skills", "Spells", "Ads/Disads Rollable" ];
+
+export const gcAtributesColors = ["GC-attributes-rollable", "GC-attributes-rollable-hover", "GC-attributes-rollable-text"];
+export const gcDodgeColors = ["GC-dodge-rollable", "GC-dodge-rollable-hover", "GC-dodge-rollable-text"];
+export const gcDamageColors = ["GC-damage-rollable", "GC-damage-rollable-hover", "GC-damage-rollable-text"];
+export const gcBlockColors = ["GC-block-rollable", "GC-block-rollable-hover", "GC-block-rollable-text"];
+export const gcParryColors = ["GC-parry-rollable", "GC-parry-rollable-hover", "GC-parry-rollable-text"];
+export const gcWeaponsColors = ["GC-weapons-rollable", "GC-weapons-rollable-hover", "GC-weapons-rollable-text"];
+export const gcSkillsColors = ["GC-skills-rollable", "GC-skills-rollable-hover", "GC-skills-rollable-text"];
+export const gcSpellsColors = ["GC-spells-rollable", "GC-spells-rollable-hover", "GC-spells-rollable-text"];
+export const gcGurpsLinksColors = ["GC-gurpslink-rollable", "GC-gurpslink-rollable-hover", "GC-gurpslink-rollable-text"];
 
 export const registerSettings = function () {
   warn("Register module settings...");
-  let gcAtributeColor = "";
-  let gcDodgeColor = "";
-  let gcDamageColor = "";
-  let gcBlockColor = "";
-  let gcParryColor = "";
-  let gcWeaponsColor = "";
-  let gcSkillsColor = "";
-  let gcSpellsColor = "";
-  let gcGurpsLinksColor = "";
-
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  gcAtributeColor = gcAtributesColors[0];
-  game.settings.register(MODULE_NAME, gcAtributeColor, {
-    name: "Attribute Background Color",
-    hint: "Attribute Background HEX Color.",
+  game.settings.register(MODULE_NAME, gcAtributesColors[0], {
+    name: gcColorAreas[0] + " Color:",
+    hint: gcColorAreas[0] + " Background Color.",
     scope: "client",
     config: true,
     default: "#ffffbe",
     type: String,
   });
-  gcAtributeColor = gcAtributesColors[1];
-  game.settings.register(MODULE_NAME, gcAtributeColor, {
-    name: "Attribute Background Hover Color",
-    hint: "Attribute Background Hover HEX Color.",
+  game.settings.register(MODULE_NAME, gcAtributesColors[1], {
+    name: gcColorAreas[0] + " Hover Color:",
+    hint: gcColorAreas[0] + " Background Hover Color.",
     scope: "client",
     config: true,
     default: "#ffff80",
     type: String,
   });
-  gcAtributeColor = gcAtributesColors[2];
-  game.settings.register(MODULE_NAME, gcAtributeColor, {
-    name: "Attribute Black/White Text Color",
-    hint: "Black Text Color When Checked.",
+  game.settings.register(MODULE_NAME, gcAtributesColors[2], {
+    name: gcColorAreas[0] + " Text Color:",
+    hint: "Black Text Color When Checked / White Text Color When Unchecked.",
     scope: "client",
     config: true,
     default: true,
     type: Boolean,
   });
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  gcDodgeColor = gcDodgeColors[0];
-  game.settings.register(MODULE_NAME, gcDodgeColor, {
-    name: "Dodge Background Color",
-    hint: "Dodge Background HEX Color.",
+  game.settings.register(MODULE_NAME, gcDodgeColors[0], {
+    name: gcColorAreas[1] + " Color:",
+    hint: gcColorAreas[1] + " Background Color.",
     scope: "client",
     config: true,
     default: "#ffffbe",
     type: String,
   });
-  gcDodgeColor = gcDodgeColors[1];
-  game.settings.register(MODULE_NAME, gcDodgeColor, {
-    name: "Dodge Background Hover Color",
-    hint: "Dodge Background Hover HEX Color.",
+  game.settings.register(MODULE_NAME, gcDodgeColors[1], {
+    name: gcColorAreas[1] + " Hover Color:",
+    hint: gcColorAreas[1] + " Background Hover Color.",
     scope: "client",
     config: true,
     default: "#ffff80",
     type: String,
   });
-  gcDodgeColor = gcDodgeColors[2];
-  game.settings.register(MODULE_NAME, gcDodgeColor, {
-    name: "Dodge Black/White Text Color",
-    hint: "Black Text Color When Checked.",
+  game.settings.register(MODULE_NAME, gcDodgeColors[2], {
+    name: gcColorAreas[1] + " Text Color:",
+    hint: "Black Text Color When Checked / White Text Color When Unchecked.",
     scope: "client",
     config: true,
     default: true,
     type: Boolean,
   });
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  gcDamageColor = gcDamageColors[0];
-  game.settings.register(MODULE_NAME, gcDamageColor, {
-    name: "Damage Background Color",
-    hint: "Damage Background HEX Color.",
+  game.settings.register(MODULE_NAME, gcDamageColors[0], {
+    name: gcColorAreas[2] + " Color:",
+    hint: gcColorAreas[2] + " Background Color.",
     scope: "client",
     config: true,
     default: "#ffffbe",
     type: String,
   });
-  gcDamageColor = gcDamageColors[1];
-  game.settings.register(MODULE_NAME, gcDamageColor, {
-    name: "Damage Background Hover Color",
-    hint: "Damage Background Hover HEX Color.",
+  game.settings.register(MODULE_NAME, gcDamageColors[1], {
+    name: gcColorAreas[2] + " Hover Color:",
+    hint: gcColorAreas[2] + " Background Hover Color.",
     scope: "client",
     config: true,
     default: "#ffff80",
     type: String,
   });
-  gcDamageColor = gcDamageColors[2];
-  game.settings.register(MODULE_NAME, gcDamageColor, {
-    name: "Damage Black/White Text Color",
-    hint: "Black Text Color When Checked.",
+  game.settings.register(MODULE_NAME, gcDamageColors[2], {
+    name: gcColorAreas[2] + " Text Color:",
+    hint: "Black Text Color When Checked / White Text Color When Unchecked.",
     scope: "client",
     config: true,
     default: true,
     type: Boolean,
   });
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  gcBlockColor = gcBlockColors[0];
-  game.settings.register(MODULE_NAME, gcBlockColor, {
-    name: "Block Background Color",
-    hint: "Block Background HEX Color.",
+  game.settings.register(MODULE_NAME, gcBlockColors[0], {
+    name: gcColorAreas[3] + " Color:",
+    hint: gcColorAreas[3] + " Background Color.",
     scope: "client",
     config: true,
     default: "#ffffbe",
     type: String,
   });
-  gcBlockColor = gcBlockColors[1];
-  game.settings.register(MODULE_NAME, gcBlockColor, {
-    name: "Block Background Hover Color",
-    hint: "Block Background Hover HEX Color.",
+  game.settings.register(MODULE_NAME, gcBlockColors[1], {
+    name: gcColorAreas[3] + " Hover Color:",
+    hint: gcColorAreas[3] + " Background Hover Color.",
     scope: "client",
     config: true,
     default: "#ffff80",
     type: String,
   });
-  gcBlockColor = gcBlockColors[2];
-  game.settings.register(MODULE_NAME, gcBlockColor, {
-    name: "Block Black/White Text Color",
-    hint: "Black Text Color When Checked.",
+  game.settings.register(MODULE_NAME, gcBlockColors[2], {
+    name: gcColorAreas[3] + " Text Color:",
+    hint: "Black Text Color When Checked / White Text Color When Unchecked.",
     scope: "client",
     config: true,
     default: true,
     type: Boolean,
   });
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  gcParryColor = gcParryColors[0];
-  game.settings.register(MODULE_NAME, gcParryColor, {
-    name: "Parry Background Color",
-    hint: "Parry Background HEX Color.",
+  game.settings.register(MODULE_NAME, gcParryColors[0], {
+    name: gcColorAreas[4] + " Color:",
+    hint: gcColorAreas[4] + " Background Color.",
     scope: "client",
     config: true,
     default: "#ffffbe",
     type: String,
   });
-  gcParryColor = gcParryColors[1];
-  game.settings.register(MODULE_NAME, gcParryColor, {
-    name: "Parry Background Hover Color",
-    hint: "Parry Background Hover HEX Color.",
+  game.settings.register(MODULE_NAME, gcParryColors[1], {
+    name: gcColorAreas[4] + " Hover Color:",
+    hint: gcColorAreas[4] + " Background Hover Color.",
     scope: "client",
     config: true,
     default: "#ffff80",
     type: String,
   });
-  gcParryColor = gcParryColors[2];
-  game.settings.register(MODULE_NAME, gcParryColor, {
-    name: "Parry Black/White Text Color",
-    hint: "Black Text Color When Checked.",
+  game.settings.register(MODULE_NAME, gcParryColors[2], {
+    name: gcColorAreas[4] + " Text Color:",
+    hint: "Black Text Color When Checked / White Text Color When Unchecked.",
     scope: "client",
     config: true,
     default: true,
     type: Boolean,
   });
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  gcWeaponsColor = gcWeaponsColors[0];
-  game.settings.register(MODULE_NAME, gcWeaponsColor, {
-    name: "Weapons Roll Background Color",
-    hint: "Weapons Roll Background HEX Color.",
+  game.settings.register(MODULE_NAME, gcWeaponsColors[0], {
+    name: gcColorAreas[5] + " Color:",
+    hint: gcColorAreas[5] + " Background Color.",
     scope: "client",
     config: true,
     default: "#ffffbe",
     type: String,
   });
-  gcWeaponsColor = gcWeaponsColors[1];
-  game.settings.register(MODULE_NAME, gcWeaponsColor, {
-    name: "Weapons Rolls Background Hover Color",
-    hint: "Weapons Rolls Background Hover HEX Color.",
+  game.settings.register(MODULE_NAME, gcWeaponsColors[1], {
+    name: gcColorAreas[5] + " Hover Color:",
+    hint: gcColorAreas[5] + " Background Hover Color.",
     scope: "client",
     config: true,
     default: "#ffff80",
     type: String,
   });
-  gcWeaponsColor = gcWeaponsColors[2];
-  game.settings.register(MODULE_NAME, gcWeaponsColor, {
-    name: "Weapons Black/White Text Color",
-    hint: "Black Text Color When Checked.",
+  game.settings.register(MODULE_NAME, gcWeaponsColors[2], {
+    name: gcColorAreas[5] + " Text Color:",
+    hint: "Black Text Color When Checked / White Text Color When Unchecked.",
     scope: "client",
     config: true,
     default: true,
     type: Boolean,
   });
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  gcSkillsColor = gcSkillsColors[0];
-  game.settings.register(MODULE_NAME, gcSkillsColor, {
-    name: "Skills Background Color",
-    hint: "Skills Background HEX Color.",
+  game.settings.register(MODULE_NAME, gcSkillsColors[0], {
+    name: gcColorAreas[6] + " Color:",
+    hint: gcColorAreas[6] + " Background Color.",
     scope: "client",
     config: true,
     default: "#ffffbe",
     type: String,
   });
-  gcSkillsColor = gcSkillsColors[1];
-  game.settings.register(MODULE_NAME, gcSkillsColor, {
-    name: "Skills Background Hover Color",
-    hint: "Skills Background Hover HEX Color.",
+  game.settings.register(MODULE_NAME, gcSkillsColors[1], {
+    name: gcColorAreas[6] + " Hover Color:",
+    hint: gcColorAreas[6] + " Background Hover Color.",
     scope: "client",
     config: true,
     default: "#ffff80",
     type: String,
   });
-  gcSkillsColor = gcSkillsColors[2];
-  game.settings.register(MODULE_NAME, gcSkillsColor, {
-    name: "Skills Black/White Text Color",
-    hint: "Black Text Color When Checked.",
+  game.settings.register(MODULE_NAME, gcSkillsColors[2], {
+    name: gcColorAreas[6] + " Text Color:",
+    hint: "Black Text Color When Checked / White Text Color When Unchecked.",
     scope: "client",
     config: true,
     default: true,
     type: Boolean,
   });
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  gcSpellsColor = gcSpellsColors[0];
-  game.settings.register(MODULE_NAME, gcSpellsColor, {
-    name: "Spells Background Color",
-    hint: "Spells Background HEX Color.",
+  game.settings.register(MODULE_NAME, gcSpellsColors[0], {
+    name: gcColorAreas[7] + " Color:",
+    hint: gcColorAreas[7] + " Background Color.",
     scope: "client",
     config: true,
     default: "#ffffbe",
     type: String,
   });
-  gcSpellsColor = gcSpellsColors[1];
-  game.settings.register(MODULE_NAME, gcSpellsColor, {
-    name: "Spells Background Hover Color",
-    hint: "Spells Background Hover HEX Color.",
+  game.settings.register(MODULE_NAME, gcSpellsColors[1], {
+    name: gcColorAreas[7] + " Hover Color:",
+    hint: gcColorAreas[7] + " Background Hover Color.",
     scope: "client",
     config: true,
     default: "#ffff80",
     type: String,
   });
-  gcSpellsColor = gcSpellsColors[2];
-  game.settings.register(MODULE_NAME, gcSpellsColor, {
-    name: "Spells Black/White Text Color",
-    hint: "Black Text Color When Checked.",
+  game.settings.register(MODULE_NAME, gcSpellsColors[2], {
+    name: gcColorAreas[7] + " Text Color:",
+    hint: "Black Text Color When Checked / White Text Color When Unchecked.",
     scope: "client",
     config: true,
     default: true,
     type: Boolean,
   });
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  gcGurpsLinksColor = gcGurpsLinksColors[0];
-  game.settings.register(MODULE_NAME, gcGurpsLinksColor, {
-    name: "Ads/Disads Rollable Background Color",
-    hint: "Ads/Disads Rollable Background HEX Color.",
+  game.settings.register(MODULE_NAME, gcGurpsLinksColors[0], {
+    name: gcColorAreas[8] + " Color:",
+    hint: gcColorAreas[8] + " Background Color.",
     scope: "client",
     config: true,
     default: "#ffffbe",
     type: String,
   });
-  gcGurpsLinksColor = gcGurpsLinksColors[1];
-  game.settings.register(MODULE_NAME, gcGurpsLinksColor, {
-    name: "Ads/Disads Rollable Background Hover Color",
-    hint: "Ads/Disads Rollable Background Hover HEX Color.",
+  game.settings.register(MODULE_NAME, gcGurpsLinksColors[1], {
+    name: gcColorAreas[8] + " Hover Color:",
+    hint: gcColorAreas[8] + " Background Hover Color.",
     scope: "client",
     config: true,
     default: "#ffff80",
     type: String,
   });
-  gcGurpsLinksColor = gcGurpsLinksColors[2];
-  game.settings.register(MODULE_NAME, gcGurpsLinksColor, {
-    name: "Ads/Disads Rollable Black/White Text Color",
-    hint: "Black Text Color When Checked.",
+  game.settings.register(MODULE_NAME, gcGurpsLinksColors[2], {
+    name: gcColorAreas[8] + " Text Color:",
+    hint: "Black Text Color When Checked / White Text Color When Unchecked.",
     scope: "client",
     config: true,
     default: true,
     type: Boolean,
   });
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 };
