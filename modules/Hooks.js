@@ -66,7 +66,7 @@ export function addColorWheel() {
     });
   
     $(`.${gcColors} .color`).css("background-color", $(`input[name="${MODULE_NAME}.${gcColors}"]`).val());
-    //$(`input[name="${MODULE_NAME}.${gcColors}"]`).hide();
+    $(`input[name="${MODULE_NAME}.${gcColors}"]`).hide();
   });
 
   $('button[name="reset"]').on("click", function () {
@@ -77,7 +77,6 @@ export function addColorWheel() {
     }
   });
 
-// #client-settings a:eq(3).active
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
