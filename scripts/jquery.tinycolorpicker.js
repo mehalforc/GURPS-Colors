@@ -1,3 +1,5 @@
+// https://github.com/wieringen/tinycolorpicker
+// Changed line 120 to work with Foundry VTT and GURPS-Colors Module
 ;(function(factory) {
     if(typeof define === 'function' && define.amd) {
         define(['jquery'], factory);
